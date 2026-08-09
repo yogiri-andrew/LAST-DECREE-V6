@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrutement // LAST DECREE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="site" class="loaded">
+
+<header class="topbar">
+
+    <div class="brand" onclick="location.href='index.html'">
+        <span class="brand-symbol">◈</span>
+        LAST DECREE
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav id="mainNav">
+        <a href="index.html">Accueil</a>
+        <a href="decrees.html">Décrets</a>
+        <a href="archives.html">Archives</a>
+        <a href="hierarchy.html">Hiérarchie</a>
+        <a href="recruitment.html" class="active">Recrutement</a>
+        <a href="control.html">Contrôle</a>
+    </nav>
+
+    <div class="system-status">
+        <span class="status-dot"></span> ONLINE
+    </div>
+
+</header>
+
+<section class="page-header">
+    <div class="eyebrow">CLASSIFIED // RECRUITMENT PROTOCOL</div>
+    <h1>RECRUTEMENT</h1>
+    <p>
+        Soumets ton dossier au système LAST DECREE.
+    </p>
+</section>
+
+<main class="content">
+
+    <div class="panel">
+
+        <div class="panel-header">
+            <div class="panel-title">
+                DOSSIER DE CANDIDATURE
+            </div>
+
+            <span class="badge">
+                SECURE
+            </span>
+        </div>
+
+        <form id="recruitmentForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>NOM</label>
+                    <input
+                        type="text"
+                        name="name"
+                        required
+                        placeholder="Votre nom">
+                </div>
+
+                <div class="form-group">
+                    <label>CODENAME</label>
+                    <input
+                        type="text"
+                        name="codename"
+                        required
+                        placeholder="Votre codename">
+                </div>
+
+                <div class="form-group full">
+                    <label>RANG SOUHAITÉ</label>
+
+                    <select name="rank" required>
+
+                        <option value="">
+                            Sélectionner
+                        </option>
+
+                        <option>XI — Observateur</option>
+                        <option>X — Archiviste</option>
+                        <option>IX — Veilleur</option>
+                        <option>VIII — Exécuteur</option>
+                        <option>VII — Gardien</option>
+                        <option>VI — Émissaire</option>
+                        <option>V — Ombre</option>
+                        <option>IV — Main du Décret</option>
+                        <option>III — Héritier</option>
+                        <option>II — Last Witness</option>
+                        <option>I — Le Sans Nom</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group full">
+                    <label>MOTIVATION</label>
+
+                    <textarea
+                        name="motivation"
+                        required
+                        placeholder="Pourquoi souhaitez-vous rejoindre LAST DECREE ?"></textarea>
+                </div>
+
+                <div class="form-group full">
+
+                    <button
+                        type="submit"
+                        class="btn primary">
+                        ENVOYER LA CANDIDATURE
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+
+<footer>
+    <div>LAST DECREE © 2026</div>
+    <div>RECRUITMENT SYSTEM</div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
