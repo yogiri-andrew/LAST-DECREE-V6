@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Center // LAST DECREE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="site" class="loaded">
+
+<header class="topbar">
+
+    <div class="brand" onclick="location.href='index.html'">
+        <span class="brand-symbol">◈</span>
+        LAST DECREE
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav id="mainNav">
+        <a href="index.html">Accueil</a>
+        <a href="decrees.html">Décrets</a>
+        <a href="archives.html">Archives</a>
+        <a href="hierarchy.html">Hiérarchie</a>
+        <a href="recruitment.html">Recrutement</a>
+        <a href="control.html" class="active">Contrôle</a>
+    </nav>
+
+    <div class="system-status">
+        <span class="status-dot"></span> ADMIN ONLINE
+    </div>
+
+</header>
+
+<section class="page-header">
+    <div class="eyebrow">AUTHORIZED PERSONNEL ONLY</div>
+    <h1>CONTROL</h1>
+    <p>
+        Centre de contrôle local du système LAST DECREE V6.
+    </p>
+</section>
+
+<main class="content">
+
+    <div class="dashboard-grid">
+
+        <div class="stat-card">
+            <span class="stat-icon">📜</span>
+            <span class="stat-number" id="decreeCount">0</span>
+            <span class="stat-label">DÉCRETS</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">🗄️</span>
+            <span class="stat-number" id="archiveCount">0</span>
+            <span class="stat-label">ARCHIVES</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">👤</span>
+            <span class="stat-number" id="applicationCount">0</span>
+            <span class="stat-label">CANDIDATURES</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">⚡</span>
+            <span class="stat-number">ONLINE</span>
+            <span class="stat-label">SYSTEM STATUS</span>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="panel">
+
+        <div class="panel-header">
+            <div class="panel-title">
+                PUBLIER UN DÉCRET
+            </div>
+
+            <span class="badge">
+                LOCAL DATABASE
+            </span>
+        </div>
+
+        <form id="decreeForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>TITRE</label>
+
+                    <input
+                        type="text"
+                        name="title"
+                        required
+                        placeholder="Titre du décret">
+                </div>
+
+                <div class="form-group">
+                    <label>CATÉGORIE</label>
+
+                    <select name="category" required>
+
+                        <option value="SYSTEM">
+                            SYSTEM
+                        </option>
+
+                        <option value="DIRECTIVE">
+                            DIRECTIVE
+                        </option>
+
+                        <option value="SECURITY">
+                            SECURITY
+                        </option>
+
+                        <option value="EVENT">
+                            EVENT
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="form-group full">
+
+                    <label>CONTENU</label>
+
+                    <textarea
+                        name="content"
+                        required
+                        placeholder="Contenu du décret..."></textarea>
+
+                </div>
+
+                <div class="form-group full">
+
+                    <button
+                        type="submit"
+                        class="btn primary">
+                        PUBLIER LE DÉCRET
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="panel">
+
+        <div class="panel-header">
+            <div class="panel-title">
+                AJOUTER UNE ARCHIVE
+            </div>
+
+            <span class="badge">
+                ARCHIVE CORE
+            </span>
+        </div>
+
+        <form id="archiveForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>TITRE</label>
+
+                    <input
+                        type="text"
+                        name="title"
+                        required
+                        placeholder="Titre de l'archive">
+                </div>
+
+                <div class="form-group">
+                    <label>TYPE</label>
+
+                    <select name="type" required>
+
+                        <option>HISTORIQUE</option>
+                        <option>CLASSIFIED</option>
+                        <option>EVENT</option>
+                        <option>PERSONNEL</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group full">
+
+                    <label>CONTENU</label>
+
+                    <textarea
+                        name="content"
+                        required
+                        placeholder="Contenu de l'archive..."></textarea>
+
+                </div>
+
+                <div class="form-group full">
+
+                    <button
+                        type="submit"
+                        class="btn">
+                        AJOUTER À L'ARCHIVE
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="panel">
+
+        <div class="panel-header">
+            <div class="panel-title">
+                ZONE SYSTÈME
+            </div>
+
+            <span class="badge">
+                DANGER
+            </span>
+        </div>
+
+        <p style="margin-bottom:20px">
+            Cette action supprime les données enregistrées dans le stockage local
+            de ce navigateur.
+        </p>
+
+        <button
+            id="resetSystem"
+            class="btn">
+            RÉINITIALISER LE SYSTÈME
+        </button>
+
+    </div>
+
+</main>
+
+<footer>
+    <div>LAST DECREE © 2026</div>
+    <div>CONTROL CENTER // V6</div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
