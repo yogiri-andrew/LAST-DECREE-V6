@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050505">
+    <meta name="description" content="LAST DECREE — Classified Organization System">
+    <title>LAST DECREE // V6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="bootScreen">
+    <div class="boot-logo">LAST DECREE</div>
+    <div class="boot-line">INITIALISATION DU SYSTÈME...</div>
+    <div class="boot-progress">
+        <span id="bootProgress"></span>
+    </div>
+    <div id="bootStatus">CHARGEMENT...</div>
+</div>
+
+<div id="site">
+
+<header class="topbar">
+    <div class="brand" onclick="location.href='index.html'">
+        <span class="brand-symbol">◈</span>
+        <span>LAST DECREE</span>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav id="mainNav">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="decrees.html">Décrets</a>
+        <a href="archives.html">Archives</a>
+        <a href="hierarchy.html">Hiérarchie</a>
+        <a href="recruitment.html">Recrutement</a>
+        <a href="control.html">Contrôle</a>
+    </nav>
+
+    <div class="system-status">
+        <span class="status-dot"></span>
+        ONLINE
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+        <div class="classified">CLASSIFIED ORGANIZATION // V6.0</div>
+
+        <h1>
+            LAST<br>
+            <span>DECREE</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            « L'ordre ne se demande pas. Il s'établit. »
+        </p>
+
+        <div class="hero-actions">
+            <a href="decrees.html" class="btn primary">CONSULTER LES DÉCRETS</a>
+            <a href="hierarchy.html" class="btn">VOIR LA HIÉRARCHIE</a>
+        </div>
+    </div>
+
+    <div class="hero-terminal">
+        <div>/// SYSTEM TERMINAL</div>
+        <p>&gt; SYSTEM ONLINE</p>
+        <p>&gt; SECURITY: ACTIVE</p>
+        <p>&gt; ARCHIVE: AVAILABLE</p>
+        <p>&gt; DECREE CORE: STABLE</p>
+        <p>&gt; FIREBASE: OPTIONAL</p>
+        <p>&gt; LOCAL STORAGE: READY</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-title">
+        <span>01</span>
+        <h2>ÉTAT DU SYSTÈME</h2>
+    </div>
+
+    <div class="dashboard-grid">
+
+        <div class="stat-card">
+            <span class="stat-icon">📜</span>
+            <span class="stat-number" id="decreeCount">0</span>
+            <span class="stat-label">DÉCRETS</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">🗄️</span>
+            <span class="stat-number" id="archiveCount">0</span>
+            <span class="stat-label">ARCHIVES</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">👁️</span>
+            <span class="stat-number">11</span>
+            <span class="stat-label">RANGS</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">⚡</span>
+            <span class="stat-number">V6</span>
+            <span class="stat-label">VERSION</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-title">
+        <span>02</span>
+        <h2>ACCÈS RAPIDE</h2>
+    </div>
+
+    <div class="cards">
+
+        <a href="decrees.html" class="feature-card">
+            <div class="feature-number">01</div>
+            <div class="feature-icon">📜</div>
+            <h3>Décrets</h3>
+            <p>Consulte les directives et décisions officielles du LAST DECREE.</p>
+            <span class="card-link">ACCÉDER →</span>
+        </a>
+
+        <a href="archives.html" class="feature-card">
+            <div class="feature-number">02</div>
+            <div class="feature-icon">🗄️</div>
+            <h3>Archives</h3>
+            <p>Explore les données historiques enregistrées dans le système.</p>
+            <span class="card-link">ACCÉDER →</span>
+        </a>
+
+        <a href="hierarchy.html" class="feature-card">
+            <div class="feature-number">03</div>
+            <div class="feature-icon">⚔️</div>
+            <h3>Hiérarchie</h3>
+            <p>Découvre les différents niveaux d'autorité de l'organisation.</p>
+            <span class="card-link">ACCÉDER →</span>
+        </a>
+
+        <a href="recruitment.html" class="feature-card">
+            <div class="feature-number">04</div>
+            <div class="feature-icon">◈</div>
+            <h3>Recrutement</h3>
+            <p>Dépose une candidature pour rejoindre le système.</p>
+            <span class="card-link">ACCÉDER →</span>
+        </a>
+
+    </div>
+</section>
+
+<section class="terminal-section">
+    <div class="terminal">
+        <div class="terminal-header">
+            <span>LAST_DECREE://TERMINAL</span>
+            <span>● ● ●</span>
+        </div>
+
+        <div class="terminal-body" id="terminalText"></div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div>LAST DECREE © 2026</div>
+    <div>CLASSIFIED SYSTEM // V6.0</div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+              </html>
